@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://gall.dcinside.com/mini/board/lists/?id=\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.dcinside\\.com/mini/([^/?]+)(?:\\?.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://gall.dcinside.com/mini/board/view/?id=\\1&no=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.dcinside\\.com/mini/([^/]+)/([^/?]+)(?:\\?.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://gall.dcinside.com/mgallery/board/lists/?id=\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.dcinside\\.com/board/([^/?]+)(?:\\?.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://gall.dcinside.com/mgallery/board/view/?id=\\1&no=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://m\\.dcinside\\.com/board/([^/]+)/([^/?]+)(?:\\?.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
