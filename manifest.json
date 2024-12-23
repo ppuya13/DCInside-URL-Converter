@@ -1,10 +1,9 @@
 {
   "manifest_version": 3,
   "name": "DCInside URL Converter",
-  "version": "1.4",
+  "version": "1.41",
   "description": "m.dcinside.com의 URL을 데스크톱 버전으로 자동 변환합니다.",
   "permissions": [
-    "tabs",
     "declarativeNetRequest"
   ],
   "background": {
