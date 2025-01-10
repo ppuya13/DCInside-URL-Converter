@@ -11,7 +11,6 @@ https://namu.wiki/w/%EB%94%94%EC%8B%9C%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9C/%EB%A
 Release
 
 1.41
-
 갤러리 글이 아닌 갤러리 자체로 이동할 경우의 rule 추가
 사용하지 않는 권한 삭제
 아이콘 수정
