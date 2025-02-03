@@ -1,14 +1,11 @@
 {
   "manifest_version": 3,
   "name": "DCInside URL Converter",
-  "version": "1.41",
+  "version": "1.42",
   "description": "m.dcinside.com의 URL을 데스크톱 버전으로 자동 변환합니다.",
   "permissions": [
     "declarativeNetRequest"
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
   "host_permissions": [
     "*://m.dcinside.com/*",
     "*://gall.dcinside.com/*"
@@ -26,5 +23,16 @@
         "path": "rules.json"
       }
     ]
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "DCInside URL Converter"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
